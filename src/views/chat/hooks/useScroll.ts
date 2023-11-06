@@ -28,7 +28,7 @@ export function useScroll(): ScrollReturn {
   const scrollToBottomIfAtBottom = async () => {
     await nextTick()
     if (scrollRef.value) {
-      const threshold = 100 // 阈值，表示滚动条到底部的距离阈值
+      const threshold = 100 // 阈值，表示滚动条到底部的距离阈值 Пороговое значение, указывающее пороговое значение расстояния от полосы прокрутки до нижнего
       const distanceToBottom = scrollRef.value.scrollHeight - scrollRef.value.scrollTop - scrollRef.value.clientHeight
       if (distanceToBottom <= threshold)
         scrollRef.value.scrollTop = scrollRef.value.scrollHeight

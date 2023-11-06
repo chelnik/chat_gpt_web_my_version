@@ -84,10 +84,10 @@ function handleRegenerate() {
 async function handleCopy() {
   try {
     await copyToClip(props.text || '')
-    message.success('复制成功')
+    message.success('复制成功 Успешное копирование')
   }
   catch {
-    message.error('复制失败')
+    message.error('复制失败 Ошибка копирования')
   }
 }
 </script>
